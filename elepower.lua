@@ -1,5 +1,6 @@
 --grinder recipes
 local grindings = {
+	{"xpanes:pane_flat 8",      "vessels:glass_fragments 3", 7},
 	{"default:obsidian",        "default:obsidian_shard 9", 13},
 	{"default:obsidian_block",  "default:obsidian_shard 9", 13},
 	{"default:obsidianbrick",   "default:obsidian_shard 9", 13},
@@ -141,9 +142,9 @@ end
 
 --alloy recipes
 local alloys = {
-	{recipe = {"default:obsidian", "bucket:bucket_empty"}, output = "bucket:bucket_lava"},
-	{recipe = {"default:obsidian_block", "bucket:bucket_empty"}, output = "bucket:bucket_lava"},
-	{recipe = {"default:obsidianbrick", "bucket:bucket_empty"}, output = "bucket:bucket_lava"},
+	{recipe = {"default:obsidian", "bucket:bucket_empty"}, output = "bucket:bucket_lava", 60},
+	{recipe = {"default:obsidian_block", "bucket:bucket_empty"}, output = "bucket:bucket_lava", 60},
+	{recipe = {"default:obsidianbrick", "bucket:bucket_empty"}, output = "bucket:bucket_lava", 60},
 }
 
 for _, i in pairs(alloys) do
