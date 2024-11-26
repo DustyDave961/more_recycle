@@ -18,6 +18,7 @@ local grindings = {
 	{"stairs:stair_outer_desert_sandstone_block 4", "default:desert_sand 5"},
 	{"stairs:stair_outer_desert_sandstone_brick 4", "default:desert_sand 5"},
 	{"basic_materials:cement_block 3",              "default:dirt"},
+	{"xpanes:pane_flat 8",                          "vessels:glass_fragments 3"},
 	{"basic_materials:gold_strip 6",                "technic:gold_dust"},
 	{"stairs:slab_cobble 2",                        "default:gravel"},
 	{"stairs:stair_cobble 4",                       "default:gravel 3"},
