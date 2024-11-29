@@ -1,5 +1,7 @@
-local cooking_recipes = {
-}
+more_recycle = {}
+more_recycle.modpath = core.get_modpath("more_recycle")
+
+local cooking_recipes = {}
 
 if core.get_modpath("hopper") then
 	table.insert(cooking_recipes, {"hopper:hopper", "default:steel_ingot 3"})
@@ -38,4 +40,12 @@ end
 
 for _, data in pairs(cooking_recipes) do
 	core.register_craft({type = "cooking", recipe = data[1], output = data[2], cooktime = data[3] or 4})
+end
+
+if core.get_modpath("technic") then
+	dofile(more_recycle.modpath .. "/technic.lua")
+end
+
+if core.get_modpath("elepower_machines") then
+	dofile(more_recycle.modpath .. "/elepower_machines")
 end
